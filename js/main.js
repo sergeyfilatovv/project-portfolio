@@ -1,34 +1,18 @@
 $(document).ready(function(){
+	//Mobile Nav
+	let mobileNavButton = document.querySelector('.header-top__nav-icons-wrapper');
+	let mobileNavicons = document.querySelector('.header-top__nav-icons');
+	let mobileNav = document.querySelector('.mobile-nav');
+	let overlay = document.querySelector('#overlay');
 
-	document.querySelector('.header-top__nav-icons-wrapper').addEventListener('click', function(){
-		document.querySelector('.mobile-nav__icons').classList.toggle('mobile-nav__icons--active');
-		document.querySelector('.mobile-nav').classList.toggle('mobile-nav--active');
-		document.querySelector('#overlay').classList.toggle('active');
+
+	mobileNavButton.addEventListener('click', function(){
+		mobileNavButton.classList.toggle('header-top__nav-icons-wrapper--active');
+		mobileNavicons.classList.toggle('header-top__nav-icons--active');
+		mobileNav.classList.toggle('mobile-nav--active');
+		overlay.classList.toggle('active');
 	
 	})
-
-    const formItems = document.querySelectorAll('.form-item__field');
-
-    for(let item of formItems){
-        const thisParent = item.closest('.form-item');
-        const thisPlaceholder = thisParent.querySelector('.form-item__placeholder');
-
-        item.addEventListener('focus', function(){
-            thisPlaceholder.classList.add('active');
-        });
-
-        item.addEventListener('blur', function(){
-            if(item.value.length > 0){
-                thisPlaceholder.classList.add('active');
-            }
-            else{
-                thisPlaceholder.classList.remove('active');
-            }
-        })
-
-
-    }
-	
 
     //FORM VALIDATE
 	$('.contacts-form').validate({

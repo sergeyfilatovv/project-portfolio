@@ -731,19 +731,20 @@ label.error {
 }
 @media (max-width: 899px) {
   #overlay {
-    display: none;
+    pointer-events: none;
+    opacity: 0;
     position: fixed;
     top: 0;
     left: 0;
     bottom: 0;
     right: 0;
-    z-index: 98;
+    z-index: 111;
     background: rgba(37, 73, 116, 0.8);
   }
 }
 
 #overlay.active {
-  display: block;
+  opacity: 1;
 }
 
 .mobile-nav {
@@ -752,6 +753,7 @@ label.error {
 }
 @media (max-width: 899px) {
   .mobile-nav {
+    overflow: auto;
     position: fixed;
     top: 0;
     right: 0;
@@ -761,6 +763,7 @@ label.error {
     width: 100%;
     padding: 30px 15px 40px 15px;
     background: #FFFFFF;
+    z-index: 990;
   }
 }
 
@@ -885,26 +888,6 @@ label.error {
   }
 }
 
-/* Active state */
-.mobile-nav__icons.mobile-nav__icons--active {
-  background-color: transparent;
-}
-.mobile-nav__icons.mobile-nav__icons--active::before, .mobile-nav__icons.mobile-nav__icons--active::after {
-  top: 0;
-  -webkit-transition: top 0.2s linear, -webkit-transform 0.2s ease-in 0.2s;
-  transition: top 0.2s linear, -webkit-transform 0.2s ease-in 0.2s;
-  transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
-  transition: top 0.2s linear, transform 0.2s ease-in 0.2s, -webkit-transform 0.2s ease-in 0.2s;
-}
-.mobile-nav__icons.mobile-nav__icons--active::before {
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
-}
-.mobile-nav__icons.mobile-nav__icons--active::after {
-  -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
-}
-
 .footer {
   padding-top: 40px;
   padding-bottom: 50px;
@@ -963,7 +946,7 @@ label.error {
 .header-top {
   position: -webkit-sticky;
   position: sticky;
-  z-index: 10;
+  z-index: 100;
   top: -30px;
   -webkit-backdrop-filter: blur(5px);
           backdrop-filter: blur(5px);
@@ -1100,6 +1083,32 @@ label.error {
   .header-top__nav-icons {
     display: block;
   }
+}
+
+/* Active state */
+.header-top__nav-icons-wrapper--active {
+  position: fixed;
+  z-index: 9999;
+  right: 20px;
+}
+
+.header-top__nav-icons.header-top__nav-icons--active {
+  background-color: transparent;
+}
+.header-top__nav-icons.header-top__nav-icons--active::before, .header-top__nav-icons.header-top__nav-icons--active::after {
+  top: 0;
+  -webkit-transition: top 0.2s linear, -webkit-transform 0.2s ease-in 0.2s;
+  transition: top 0.2s linear, -webkit-transform 0.2s ease-in 0.2s;
+  transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
+  transition: top 0.2s linear, transform 0.2s ease-in 0.2s, -webkit-transform 0.2s ease-in 0.2s;
+}
+.header-top__nav-icons.header-top__nav-icons--active::before {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+.header-top__nav-icons.header-top__nav-icons--active::after {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
 }
 
 .header {

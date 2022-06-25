@@ -1,20 +1,21 @@
 #overlay{
     /* Mobile */
     @media (max-width: 899px) {
-        display: none;
+        pointer-events: none;
+        opacity: 0;
         position: fixed;
         top: 0;
         left: 0;
         bottom: 0;
         right: 0;
-        z-index: 98;
+        z-index: 111;
         background: rgba(37, 73, 116, 0.8);  
     }
     
 }
 
 #overlay.active{
-    display: block;
+    opacity: 1;
 }
 
 
@@ -22,6 +23,7 @@
     display: none;
     /* Tablet */
     @media (max-width: 899px) {
+        overflow: auto;
         position: fixed;
         top: 0;  
         right: 0;
@@ -31,9 +33,13 @@
         width: 100%;
         padding: 30px 15px 40px 15px;
         background: #FFFFFF; 
-
+        z-index: 990;  
         
     }
+   
+
+        
+    
 }
 
 .mobile-nav.mobile-nav--active{
@@ -47,6 +53,8 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
+    
     
     
     
@@ -147,22 +155,6 @@
     
 }
 
-/* Active state */
 
-    
-.mobile-nav__icons.mobile-nav__icons--active {
-    background-color: transparent;
 
-    &::before, &::after {
-        top: 0;
-        transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
-    }
 
-    &::before {
-        transform: rotate(45deg);
-    }
-
-    &::after {
-        transform: rotate(-45deg);
-    }
-}
