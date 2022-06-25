@@ -1,0 +1,33 @@
+.hw {
+    padding-top: 70px;
+    padding-bottom: 90px;
+
+    /* Tablet */
+    @media (max-width: 1139px) {
+        padding-top: 60px;
+        padding-bottom: 70px;
+
+        /* Mobile */
+        @media (max-width: 899px) {
+        padding-top: 40px;
+        padding-bottom: 40px;
+        }
+
+    }
+}
+
+.hw__title {
+    text-align: center;
+    margin-bottom: 70px;
+
+    /* Tablet */
+    @media (max-width: 1139px) {
+        margin-bottom: 50px;
+    }
+
+    /* Mobile */
+    @media (max-width: 899px) {
+        margin-bottom: 40px;
+    }
+}
+

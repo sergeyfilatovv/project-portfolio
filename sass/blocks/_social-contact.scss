@@ -1,0 +1,44 @@
+.social-contact {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.social-contact--edit{
+    margin-bottom: 0;
+}
+
+.social-contact.social-contact--edit > * + *{
+
+    /* Tablet */
+    @media (max-width: 1139px) {
+        margin-left: 30px;
+    }
+
+    /* Mobile */
+    @media (max-width: 899px) {
+        margin-left: 20px;
+    }
+}
+
+.social-contact > * + *{
+    margin-left: 30px;
+
+    /* Tablet */
+    @media (max-width: 1139px) {
+        margin-left: 20px;
+    }
+}
+
+.social-contact__img{
+    /* Mobile */
+    @media (max-width: 899px) {
+        width: 38px;
+        height: 38px;
+    }
+}
+
+
+
+.social-contact__link:hover{
+    filter: grayscale(1);
+}

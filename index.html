@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<!-- encoding -->
+		<meta charset="UTF-8" />
+		<!-- Mobile support -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<!-- Title and SEO -->
+		<title>Портфолио</title>
+		<meta name="description" content="Описание страницы" />
+		<meta name="keywords" content="ключевые слова, фразы" />
+
+		<!-- Styles -->
+		<link rel="stylesheet" href="./css/main.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+
+		<!-- Open Graph -->
+		<!-- <meta property="og:url" content="https://webcademy.ru/" /> -->
+		<meta property="og:type" content="website" />
+		<meta property="og:title" content="Туристическое агентство Форест Тревел" />
+		<meta property="og:description" content="Турпоходы по дикой природе" />
+		<meta property="og:image" content="./img/opengraph.jpg"/>
+
+		<!-- Favicons -->
+		<link rel="apple-touch-icon" sizes="180x180" href="/project-portfolio/img/favicons/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="/project-portfolio/img/favicons/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/project-portfolio/img/favicons/favicon-16x16.png">
+		<link rel="manifest" href="/project-portfolio/img/favicons/site.webmanifest">
+		<link rel="mask-icon" href="/project-portfolio/img/favicons/safari-pinned-tab.svg" color="#5bbad5">
+		<link rel="shortcut icon" href="/project-portfolio/img/favicons/favicon.ico">
+		<meta name="msapplication-TileColor" content="#da532c">
+		<meta name="msapplication-config" content="/project-portfolio/img/favicons/browserconfig.xml">
+		<meta name="theme-color" content="#ffffff">
+	</head>
+	<body>
+		<div id="overlay"></div>
+		<div class="header-top">
+			<div class="container">
+				<nav class="header-top__navigation">
+					<ul class="header-top__list" id="header-menu">
+						<li class="header-top__line"><a href="#header-skills">Навыки</a></li>
+						<li class="header-top__line"><a href="#portfolio">Портфолио</a></li>
+						<li class="header-top__line"><a href="#hw">Как я работаю</a></li>
+						<li class="header-top__line"><a href="#contacts">Контакты</a></li>
+					</ul>
+					<div class="header-top__contact">
+						<a class="header-top__link" href="#">
+							<svg class="icon-ln">
+								<use xlink:href="./img/header/icons/sprite.svg#icon-ln"></use>
+							</svg>
+						</a>
+						<a class="header-top__link" href="#">
+							<svg class="icon-gh">
+								<use xlink:href="./img/header/icons/sprite.svg#icon-gh"></use>
+							</svg>
+						</a>
+					</div>
+					<!-- mobile -->
+					<div class="header-top__title-wrapper">
+						<h2 class="header-top__title">HTML Верстальщик</h2>
+					</div>
+					<div class="header-top__nav-icons-wrapper">
+						<div class="header-top__nav-icons">
+						</div>
+					</div>
+					<!--// mobile -->
+				</nav>
+			</div>
+		</div>
+		<header class="header">
+			<div class="header-center">
+				<div class="container">
+					<!-- Мобильная навигация -->
+					<div class="mobile-nav">
+						<div class="mobile-nav__wrapper">
+							<div class="mobile-nav__content">
+								<ul class="mobile-nav__list" id="mobile-menu">
+									<li class="mobile-nav__line"><a href="#header-skills">Навыки</a></li>
+									<li class="mobile-nav__line"><a href="#portfolio">Портфолио</a></li>
+									<li class="mobile-nav__line"><a href="#hw">Как я работаю</a></li>
+									<li class="mobile-nav__line"><a href="#contacts">Контакты</a></li>
+								</ul>
+								<div class="mobile-nav__icons-wrapper">
+									<div class="mobile-nav__icons">
+									</div>
+								</div>
+							</div>
+							<div class="mobile-nav__contacts">
+								<div class="social-contact social-contact--edit ">
+									<a class="social-contact__link" href="https://tlgg.ru/@filatovss1994"><img class="social-contact__img" src="./img/header/icons/telegram.svg.svg" alt="telegram"></a>
+									<a class="social-contact__link" href="https://vk.com/id99299347"><img class="social-contact__img" src="./img/header/icons/vk.svg.svg" alt="vk"></a>
+									<a class="social-contact__link" href="#"><img class="social-contact__img" src="./img/header/icons/facebook.svg.svg" alt="facebook"></a>
+									<a class="social-contact__link" href="#"><img class="social-contact__img" src="./img/header/icons/instagram.svg.svg" alt="instagram"></a>
+									<a class="social-contact__link" href="https://wa.me/79053212188"><img class="social-contact__img" src="./img/header/icons/whatsapp.svg.svg" alt="whatsapp"></a>
+								</div>
+								<div class="mobile-nav__mail">
+									<a class="mobile-nav__link" href="mailto:don.filato2010@yandex.ru">don.filato2010@yandex.ru</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="header-center__row">
+						<div class="description-name">
+							<div class="description-name__title">
+								<h1 class="main-title underline-main-title">Сергей Филатов</h1>
+							</div>
+							<!-- mobile XS -->
+							<div class="description-name__img">
+								<img src="./img/header/main-foto.jpg" alt="center-img">
+							</div>
+							<!--// mobile XS -->
+							<p>Верстальщик сайтов, веб-разработчик. Оперативная верстка. Работаю с соблюдением сроков и выполнением ТЗ.</p>
+							<div class="description-name__buttons">
+								<a class="button" href="#header-skills">Познакомиться</a>
+								<a class="button button--small" href="#contacts">Контакты</a>
+							</div>
+						</div>
+						<div class="header-center__img">
+							<img src="./img/header/main-foto.jpg" alt="center-img">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="header-banner">
+				<img src="./img/header/header-banner.img.jpg" alt="banner">
+			</div>
+			<div class="header-skills" id="header-skills">
+				<div class="container">
+					<div class="header-skills__row">
+						<div class="skills-description">
+							<div class="skills-description__title">
+								<h3 class="skills-title">Что я умею:</h3>
+							</div>
+							<ul class="skills-description__list">
+								<li class="skills-description__line">pixel perfect, полное соответствие макету</li>
+								<li class="skills-description__line">верстаю с сеткой или без</li>
+								<li class="skills-description__line">адаптивная верстка под мобильные устройства</li>
+								<li class="skills-description__line">оптимизация по retina экраны</li>
+								<li class="skills-description__line">с Bootstrap и без него</li>
+							</ul>
+						</div>
+						<div class="contact-description">
+							<div class="contact-description__title">
+								<h3 class="skills-title">На связи:</h3>
+							</div>
+							<div class="social-contact">
+								<a class="social-contact__link" href="https://tlgg.ru/@filatovss1994"><img class="social-contact__img" src="./img/header/icons/telegram.svg.svg" alt="telegram"></a>
+								<a class="social-contact__link" href="https://vk.com/id99299347"><img class="social-contact__img" src="./img/header/icons/vk.svg.svg" alt="vk"></a>
+								<a class="social-contact__link" href="#"><img class="social-contact__img" src="./img/header/icons/facebook.svg.svg" alt="facebook"></a>
+								<a class="social-contact__link" href="#"><img class="social-contact__img" src="./img/header/icons/instagram.svg.svg" alt="instagram"></a>
+								<a class="social-contact__link" href="https://wa.me/79053212188"><img class="social-contact__img" src="./img/header/icons/whatsapp.svg.svg" alt="whatsapp"></a>
+							</div>
+							<div class="contact-description__mail">
+								<a class="contact-description__link" href="mailto:don.filato2010@yandex.ru">don.filato2010@yandex.ru</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<section class="portfolio" id="portfolio">
+			<div class="container">
+				<div class="portfolio__title">
+					<h2 class="title underline-title">Портфолио</h2>
+				</div>
+				<div class="portfolio__row">
+					<a class="portfolio__link" href="http://t90532xo.beget.tech/forest-travel/index.html">
+						<div class="card card--big">
+							<div class="card__img-wrapper">
+								<img class="card__img" src="./img/portfolio/forest-travel-project.jpg.jpg" alt="portfolio-5">
+							</div>
+							<div class="card__header">
+								<h3 class="card__title">Верстка “Форест тревел”</h3>
+								<p class="card__subtitle">Верстка многостраничного сайта </p>
+							</div>
+						</div>
+					</a>
+					<a class="portfolio__link" href="http://t90532xo.beget.tech/project-unit/index.html">
+						<div class="card card--big">
+							<div class="card__img-wrapper">
+								<img class="card__img" src="./img/portfolio/unit-project.jpg.jpg" alt="portfolio-5">
+							</div>
+							<div class="card__header">
+								<h3 class="card__title">Сайт приложения “Юнит”</h3>
+								<p class="card__subtitle">Верстка лендинга</p>
+							</div>
+						</div>
+					</a>
+					<!-- <a class="portfolio__link" href="#">
+						<div class="card">
+							<div class="card__img-wrapper">
+								<img class="card__img" src="./img/portfolio/portfolio-3.jpg.jpg" alt="portfolio-3">
+							</div>
+							<div class="card__header">
+								<h3 class="card__title">Верстка “Мир Авто”</h3>
+								<p class="card__subtitle">Верстка многостраничного сайта </p>
+							</div>
+						</div>
+					</a> -->
+					<!-- <a class="portfolio__link" href="#">
+						<div class="card">
+							<div class="card__img-wrapper">
+								<img class="card__img" src="./img/portfolio/portfolio-2.jpg.jpg" alt="portfolio-2">
+							</div>
+							<div class="card__header">
+								<h3 class="card__title">Верстка “Мир Авто”</h3>
+								<p class="card__subtitle">Верстка многостраничного сайта </p>
+						 	</div>
+						</div>
+					</a> -->
+					<!-- <a class="portfolio__link" href="#">
+						<div class="card">
+							<div class="card__img-wrapper">
+								<img class="card__img" src="./img/portfolio/portfolio-1.jpg.jpg" alt="portfolio-1">
+							</div>
+							<div class="card__header">
+								<h3 class="card__title">Верстка “Мир Авто”</h3>
+								<p class="card__subtitle">Верстка многостраничного сайта </p>
+							</div>
+						</div>
+					</a> -->
+				</div>
+			</div>
+		</section>
+		<section class="hw" id="hw">
+			<div class="container">
+				<div class="hw__title">
+					<h2 class="title underline-title">Как я работаю</h2>
+				</div>
+				<div class="time-line">
+					<div class="time-line-item">
+						<div class="time-line-item__title-wrapper">
+							<h4 class="time-line-item__title underline-title underline-time-line-item__title">Оцениваю макет</h4>
+						</div>
+						<p class="time-line-item__description">Оцениваю объем работы, сложность,<br> нюансы. Задаю вопросы.</p>
+						<p class="time-line-item__time">Время: 2 часа</p>
+					</div>
+					<div class="time-line-item">
+						<div class="time-line-item__title-wrapper">
+							<h4 class="time-line-item__title underline-time-line-item__title">ТЗ, смета и график работ</h4>
+						</div>
+						<p class="time-line-item__description">Согласовываем техническое задание<br> и график работ по проекту. Осмечиваю стоимость по этапам работы.</p>
+						<p class="time-line-item__time">Время: 2 - 4 часа</p>
+					</div>
+					<div class="time-line-item">
+						<div class="time-line-item__title-wrapper">
+							<h4 class="time-line-item__title underline-time-line-item__title">Вы держите руку на пульсе</h4>
+						</div>
+						<p class="time-line-item__description time-line-item__description--active">Выдаю клиенту доступ к GitHub репозиторию и доске Trello. Вы в любое время можете видеть актуальное состояние проекта и задач.</p>
+					</div>
+					<div class="time-line-item">
+						<div class="time-line-item__title-wrapper">
+							<h4 class="time-line-item__title underline-time-line-item__title">Выполняю каждый этап</h4>
+						</div>
+						<p class="time-line-item__description time-line-item__description--active ">Поочередно выполняю каждый этап<br> работы. Передаю результаты. Заказчик производит поэтапную оплату.</p>
+					</div>
+					<div class="time-line-item">
+						<div class="time-line-item__title-wrapper">
+							<h4 class="time-line-item__title underline-time-line-item__title">Финальное ревью проекта</h4>
+						</div>
+						<p class="time-line-item__description">Проект готов. Финальное ревью и полировка до идеального состояния. Передаю файлы проекта, заливаю сайт на хостинг заказчика.</p>
+						<p class="time-line-item__time">Время: 2 - 4 часа</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="contacts" id="contacts">
+			<div class="container">
+				<div class="contacts__title">
+					<h2 class="title underline-title">Контакты</h2>
+				</div>
+				<div class="contacts__row">
+					<div class="contacts__personal">
+						<div class="contacts__description-wrapper">
+							<p class="contacts__description">Если вы ищите специалиста по верстке сайтов или frontend разработчика в команду для работы над проектом —  напишите мне.
+							</p>
+						</div>
+						<div class="contacts__list-wrapper">
+							<ul class="contacts__list">
+								<li class="contacts__line">
+									<span class="contacts__info">Email</span>
+									<a class="contacts__link" href="mailto:don.filato2010@yandex.ru">don.filato2010@yandex.ru</a>
+								</li>
+								<li class="contacts__line">
+									<span class="contacts__info">Телефон</span>
+									<a class="contacts__link" href="tel:+79053212188">+ 7 905 321 21 88</a>
+								</li>
+							</ul>
+						</div>
+						<div class="social-contact social-contact--edit ">
+							<a class="social-contact__link" href="https://tlgg.ru/@filatovss1994"><img class="social-contact__img" src="./img/header/icons/telegram.svg.svg" alt="telegram"></a>
+							<a class="social-contact__link" href="https://vk.com/id99299347"><img class="social-contact__img" src="./img/header/icons/vk.svg.svg" alt="vk"></a>
+							<a class="social-contact__link" href="#"><img class="social-contact__img" src="./img/header/icons/facebook.svg.svg" alt="facebook"></a>
+							<a class="social-contact__link" href="#"><img class="social-contact__img" src="./img/header/icons/instagram.svg.svg" alt="instagram"></a>
+							<a class="social-contact__link" href="https://wa.me/79053212188"><img class="social-contact__img" src="./img/header/icons/whatsapp.svg.svg" alt="whatsapp"></a>
+						</div>
+					</div>
+					<div class="contacts-form-wrapper">
+						<form action="#" class="contacts-form">
+							<div class="form-item">
+								<span class="form-item__placeholder">Ваш Email</span>
+								<input class="form-item__field" name="email" type="email">
+							</div>
+							<div class="form-item">
+								<span class="form-item__placeholder">Сообщение</span>
+								<textarea class="form-item__field" name="message" cols="30" rows="10"></textarea>
+							</div>
+							<div class="form-btn-item">
+								<input class="form-btn" type="submit" value="Отправить">
+								</input>
+							</div>
+							<img class="contacts__img-marks" src="./img/contacts/contacts-icon.svg.svg" alt="contacts-icon">
+						</form>
+						<div id="answer"></div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<footer class="footer">
+			<div class="container">
+				<div class="footer__name-wrapper">
+					<p class="footer__name">© 2022 — Сергей Филатов</p>
+				</div>
+				<div class="footer__description">
+					<p>Веб-разработчик из Москвы, занимаюсь версткой и созданием сайтов.</p>
+					<p>Этот сайт сделал в рамках прохождения обучения по верстке на курсах от <a class="footer__link" href="https://webcademy.ru/">WebCademy.ru</a></p>
+				</div>
+			</div>
+		</footer>
+		<!-- Библиотека jQuery -->
+		<script src="./libs/jquery/jquery-3.0.0.min.js"></script>
+		<!-- Библиотека валидации jQueryvalidate -->
+		<script src="./libs/jqueryvalidate/jquery.validate.min.js"></script>
+		<!-- Библиотека pageNav -->
+		<script src="./libs/pageNav/nav.js"></script>
+		<!-- custom script -->
+		<script src="./js/main.js"></script>
+	</body>
+</html>

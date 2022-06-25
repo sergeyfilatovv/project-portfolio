@@ -1,0 +1,168 @@
+#overlay{
+    /* Mobile */
+    @media (max-width: 899px) {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        z-index: 98;
+        background: rgba(37, 73, 116, 0.8);  
+    }
+    
+}
+
+#overlay.active{
+    display: block;
+}
+
+
+.mobile-nav{
+    display: none;
+    /* Tablet */
+    @media (max-width: 899px) {
+        position: fixed;
+        top: 0;  
+        right: 0;
+        bottom: 0;
+        z-index: 99;  
+        max-width: 320px;
+        width: 100%;
+        padding: 30px 15px 40px 15px;
+        background: #FFFFFF; 
+
+        
+    }
+}
+
+.mobile-nav.mobile-nav--active{
+    display: block;
+}
+
+
+
+.mobile-nav__wrapper{
+    height: 570px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+    
+    
+}
+
+.mobile-nav__list > * + *{
+    /* Tablet */
+    @media (max-width: 899px) {
+        margin-top: 28px; 
+    }
+    
+}
+.mobile-nav__line {
+    /* Tablet */
+    @media (max-width: 1139px) {
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 1.3;
+        
+        color: #000000;  
+    }
+    
+}
+
+.mobile-nav__content {
+    /* Tablet */
+    @media (max-width: 899px) {
+        display: flex;
+        justify-content: space-between; 
+        
+    }
+
+}
+
+.mobile-nav__icons-wrapper{
+    /* Tablet */
+    @media (max-width: 899px) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        height: 32px; 
+    }
+    
+
+}
+
+
+.mobile-nav__icons{
+    /* Tablet */
+    @media (max-width: 899px) {
+        // display: none;
+        position: relative;
+        width: 40px;
+        height: 5px;
+        background-color: #000000;
+
+    &::after, &::before{
+        content: "";
+        position: absolute;
+        width: 40px;
+        height: 5px;
+        background-color: #000000;
+    }
+
+   &::before{
+    bottom: -10px;
+   }
+
+   &::after{
+    top: -10px;
+   }
+    }
+    
+}
+
+.mobile-nav__contacts > * + *{
+    /* Mobile */
+    @media (max-width: 899px) {
+        margin-top: 20px;  
+    }
+    
+}
+
+.mobile-nav__link{
+    /* Mobile */
+    @media (max-width: 899px) {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 1.3;
+        
+        color: #1A71D2;  
+
+        &:hover{
+            color: #FF543E;
+        }
+    }
+    
+}
+
+/* Active state */
+
+    
+.mobile-nav__icons.mobile-nav__icons--active {
+    background-color: transparent;
+
+    &::before, &::after {
+        top: 0;
+        transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
+    }
+
+    &::before {
+        transform: rotate(45deg);
+    }
+
+    &::after {
+        transform: rotate(-45deg);
+    }
+}
