@@ -20,9 +20,9 @@
 
 
 .mobile-nav{
-    display: none;
     /* Tablet */
-    @media (max-width: 899px) {
+        transform: translate(100%);
+        transition: .5s;
         overflow: auto;
         position: fixed;
         top: 0;  
@@ -35,7 +35,7 @@
         background: #FFFFFF; 
         z-index: 990;  
         
-    }
+    
    
 
         
@@ -44,6 +44,7 @@
 
 .mobile-nav.mobile-nav--active{
     display: block;
+    transform: translate(0);
 }
 
 

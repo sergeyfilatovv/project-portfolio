@@ -63,6 +63,8 @@ line-height: 1.3;
     /* Mobile */
     @media (max-width: 899px){
         display:block;
+        position: absolute;
+        left: 16px;
     }
     }
 
@@ -92,6 +94,10 @@ line-height: 1.3;
     align-items: center;
     width: 40px;
     height: 25px;
+    position: absolute;
+    z-index: 99999;
+    top: 27px;
+    right: 16px;
     
     
     
@@ -135,6 +141,8 @@ line-height: 1.3;
     position: fixed;
     z-index: 9999;
     right: 20px;
+    top: 25px;
+    height: 30px;
 }
 
 .header-top__nav-icons.header-top__nav-icons--active {
