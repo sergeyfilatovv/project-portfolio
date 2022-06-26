@@ -8,8 +8,9 @@
         left: 0;
         bottom: 0;
         right: 0;
-        z-index: 111;
+        z-index: 14;
         background: rgba(37, 73, 116, 0.8);  
+        transition: 2ms;
     }
     
 }
@@ -27,13 +28,12 @@
         position: fixed;
         top: 0;  
         right: 0;
-        bottom: 0;
-        z-index: 99;  
+        bottom: 0;  
         max-width: 320px;
         width: 100%;
         padding: 30px 15px 40px 15px;
         background: #FFFFFF; 
-        z-index: 990;  
+        z-index: 14;  
         
     
    

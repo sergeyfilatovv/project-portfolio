@@ -1,6 +1,6 @@
 .header-top {
     position: sticky;
-    z-index: 100;
+    z-index: 10;
     top: -30px;
     backdrop-filter: blur(5px);
     padding-top: 60px;
@@ -11,9 +11,12 @@
     position: unset;
     padding-top: 30px;
     padding-bottom:10px;
+    padding-left: 16px;
+    padding-right: 16px;
 }
 
 }
+
 
 .header-top__navigation {
 display: flex;
@@ -63,8 +66,7 @@ line-height: 1.3;
     /* Mobile */
     @media (max-width: 899px){
         display:block;
-        position: absolute;
-        left: 16px;
+       
     }
     }
 
@@ -95,9 +97,10 @@ line-height: 1.3;
     width: 40px;
     height: 25px;
     position: absolute;
-    z-index: 99999;
-    top: 27px;
+    top: 28px;
     right: 16px;
+    z-index: 115;
+    
     
     
     
@@ -138,11 +141,8 @@ line-height: 1.3;
 /* Active state */
 
 .header-top__nav-icons-wrapper--active{
-    position: fixed;
-    z-index: 9999;
-    right: 20px;
-    top: 25px;
     height: 30px;
+
 }
 
 .header-top__nav-icons.header-top__nav-icons--active {
@@ -151,6 +151,7 @@ line-height: 1.3;
     &::before, &::after {
         top: 0;
         transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
+        
     }
 
     &::before {

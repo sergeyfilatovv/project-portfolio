@@ -738,8 +738,10 @@ label.error {
     left: 0;
     bottom: 0;
     right: 0;
-    z-index: 111;
+    z-index: 14;
     background: rgba(37, 73, 116, 0.8);
+    -webkit-transition: 2ms;
+    transition: 2ms;
   }
 }
 
@@ -758,12 +760,11 @@ label.error {
   top: 0;
   right: 0;
   bottom: 0;
-  z-index: 99;
   max-width: 320px;
   width: 100%;
   padding: 30px 15px 40px 15px;
   background: #FFFFFF;
-  z-index: 990;
+  z-index: 14;
 }
 
 .mobile-nav.mobile-nav--active {
@@ -947,7 +948,7 @@ label.error {
 .header-top {
   position: -webkit-sticky;
   position: sticky;
-  z-index: 100;
+  z-index: 10;
   top: -30px;
   -webkit-backdrop-filter: blur(5px);
           backdrop-filter: blur(5px);
@@ -960,6 +961,8 @@ label.error {
     position: unset;
     padding-top: 30px;
     padding-bottom: 10px;
+    padding-left: 16px;
+    padding-right: 16px;
   }
 }
 
@@ -1017,8 +1020,6 @@ label.error {
 @media (max-width: 899px) {
   .header-top__title-wrapper {
     display: block;
-    position: absolute;
-    left: 16px;
   }
 }
 
@@ -1060,9 +1061,9 @@ label.error {
   width: 40px;
   height: 25px;
   position: absolute;
-  z-index: 99999;
-  top: 27px;
+  top: 28px;
   right: 16px;
+  z-index: 115;
 }
 
 .header-top__nav-icons {
@@ -1094,10 +1095,6 @@ label.error {
 
 /* Active state */
 .header-top__nav-icons-wrapper--active {
-  position: fixed;
-  z-index: 9999;
-  right: 20px;
-  top: 25px;
   height: 30px;
 }
 
@@ -1834,4 +1831,5 @@ label.error {
     display: none;
   }
 }
+
 /*# sourceMappingURL=main.css.map */
