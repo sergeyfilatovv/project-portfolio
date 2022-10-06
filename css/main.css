@@ -755,6 +755,8 @@ body > * {
 .form-item {
   position: relative;
   border-bottom: 2px solid  #E5E5E5;
+  -webkit-transition: 0.2s ease-in;
+  transition: 0.2s ease-in;
 }
 
 .form-item.red-line {
@@ -785,10 +787,7 @@ body > * {
 input.form-item__field {
   display: block;
   width: 440px;
-  padding-bottom: 9px;
-  padding-top: 9px;
-  padding-left: 10px;
-  padding-bottom: 10px;
+  height: 40px;
   outline: none;
   /* Tablet */
   /* Mobile */
@@ -808,6 +807,8 @@ textarea.form-item__field {
   display: block;
   width: 440px;
   outline: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
   /* Tablet */
   /* Mobile */
 }
@@ -850,6 +851,8 @@ textarea.form-item__field {
 label.error {
   position: absolute;
   bottom: -30px;
+  font-size: 14px;
+  font-weight: 700;
   color: #ff00d0;
 }
 
