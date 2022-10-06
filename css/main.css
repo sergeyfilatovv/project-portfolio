@@ -12,6 +12,11 @@
           box-sizing: border-box;
 }
 
+:focus,
+:active {
+  outline: none;
+}
+
 /* Links */
 a, a:visited {
   color: inherit;
@@ -740,7 +745,7 @@ body > * {
 }
 
 .contacts-form > * + * {
-  margin-top: 30px;
+  margin-top: 50px;
 }
 
 .contacts-form > *:last-of-type {
@@ -751,11 +756,13 @@ body > * {
   position: relative;
   border-bottom: 2px solid  #E5E5E5;
 }
-.form-item :focus {
+
+.form-item.red-line {
   border-bottom: 2px solid  #FF543E;
 }
 
 .form-item__placeholder {
+  position: absolute;
   width: 440px;
   font-weight: 400;
   font-size: 22px;
@@ -778,7 +785,10 @@ body > * {
 input.form-item__field {
   display: block;
   width: 440px;
-  height: 39px;
+  padding-bottom: 9px;
+  padding-top: 9px;
+  padding-left: 10px;
+  padding-bottom: 10px;
   outline: none;
   /* Tablet */
   /* Mobile */
@@ -839,7 +849,7 @@ textarea.form-item__field {
 
 label.error {
   position: absolute;
-  top: 0px;
+  bottom: -30px;
   color: #ff00d0;
 }
 

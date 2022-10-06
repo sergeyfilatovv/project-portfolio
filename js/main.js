@@ -4,6 +4,31 @@ $(document).ready(function(){
 	let mobileNavicons = document.querySelector('.header-top__nav-icons');
 	let mobileNav = document.querySelector('.mobile-nav');
 	let overlay = document.querySelector('#overlay');
+	//Contacts Form
+	const formItems = document.querySelectorAll('.form-item__field');
+
+	//Изменение положения плейсхолдеров
+	for(let item of formItems){
+		const thisParent = item.closest('.form-item');
+		const thisPlaceholder = thisParent.querySelector('.form-item__placeholder');
+		//Если инпут в фокусе
+		item.addEventListener('focus', function(){
+			thisPlaceholder.classList.add('active');
+			thisParent.classList.add('red-line');
+		});
+
+		//Если инпут теряет фокус
+		item.addEventListener('blur', function(){
+			if(item.value.length > 0){
+				thisPlaceholder.classList.add('active');
+				thisParent.classList.add('red-line');
+			}
+			else{
+				thisPlaceholder.classList.remove('active');
+				thisParent.classList.remove('red-line');
+			}
+		});
+	}
 
 
 	// Включение мобильной навигации
@@ -57,13 +82,8 @@ $(document).ready(function(){
 		if (document.body.classList.contains('no-scroll')) {
 			document.body.classList.remove('no-scroll');
 		}}
-
-		
-
-
-
-
-    //FORM VALIDATE
+    
+		//FORM VALIDATE
 	$('.contacts-form').validate({
 		rules: {
 			email: {
