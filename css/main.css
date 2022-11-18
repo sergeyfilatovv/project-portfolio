@@ -856,6 +856,11 @@ label.error {
   color: #ff00d0;
 }
 
+.contacts-form h2 {
+  font-size: 28px;
+  font-weight: 500;
+}
+
 body.no-scroll {
   overflow: hidden;
 }
